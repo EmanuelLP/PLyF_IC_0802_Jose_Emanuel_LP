@@ -42,21 +42,25 @@ public class FP_Structured_01{
 	}
 	private static void printAllCoursesIndividually(List<String> courses){
 		//How to loop the numbers?
-		courses.stream().forEach(curso -> System.out.println("-->"+curso));
+		courses.stream()
+			.forEach(course -> System.out.println("-->"+course));
+		System.out.println("");
 	}
 
 	private static void printCoursesContainingWord(List<String> courses){
 		//How to loop the numbers?
 		courses.stream()
-            .filter(curso -> curso.contains("Spring"))
-            .forEach(curso -> System.out.print("-->"+curso+"\t"));
+            .filter(course -> course.contains("Spring"))
+            .forEach(course -> System.out.print("-->"+course+"\t"));
+        System.out.println("");
 	}
 
 	private static void printCoursesWhoseNameHasAtleast(List<String> courses){
 		//How to loop the numbers?
 		courses.stream()
-            .filter(curso -> curso.length() >= 4)
-            .forEach(curso -> System.out.print(curso+", "));
+            .filter(course -> course.length() >= 4)
+            .forEach(course -> System.out.print(course+", "));
+        System.out.println("");
 	}
 
 	private static void printCubesOfOddNumbers(List<Integer> numbers){
@@ -65,11 +69,14 @@ public class FP_Structured_01{
             .filter(number -> number % 2 != 0)
             .map(number -> number *number * number)
             .forEach(number -> System.out.print(number+", "));
+        System.out.println("");
 	}
 
 	private static void printNumberOfCharacters(List<String> courses){
 		//How to loop the numbers?
-		courses.stream().forEach(curso -> System.out.print(curso.length()+", "));
+		courses.stream()
+			.forEach(course -> System.out.print(course.length()+", "));
+		System.out.println("");
 	}
 
 }
