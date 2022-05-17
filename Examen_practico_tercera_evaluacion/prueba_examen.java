@@ -12,6 +12,6 @@ public interface prueba_examen{
 		return (a+b);
 	}
 
-	public abstrac void operacion_prueba(int a, int b, int c){}
+	public abstract void operacion_prueba(int a, int b, int c){}
 	
 }
